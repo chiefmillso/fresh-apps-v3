@@ -1,4 +1,5 @@
 ﻿using System.Web;
+using System.Web.Routing;
 
 namespace Fresh.Web
 {
@@ -6,6 +7,7 @@ namespace Fresh.Web
     {
         protected void Application_Start()
         {
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
