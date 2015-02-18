@@ -4,3 +4,4 @@
 /// <reference path="npm.js" />
 /// <reference path="bootstrap.min.js" />
 /// <reference path="modernizr-2.8.3.js" />
+/// <reference path="../gulpfile.js" />
