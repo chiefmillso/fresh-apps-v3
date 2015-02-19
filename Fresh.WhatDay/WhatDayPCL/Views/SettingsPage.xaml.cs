@@ -5,13 +5,11 @@ using Xamarin.Forms;
 
 namespace WhatDayPCL
 {
-	public partial class SettingsPage : ContentPage
+	public partial class SettingsPage : ContentPage, IViewFor<SettingsViewModel>
 	{
 		public SettingsPage ()
 		{
 			InitializeComponent ();
-
-			BindingContext = new SettingsViewModel ();
 		}
 	}
 }
