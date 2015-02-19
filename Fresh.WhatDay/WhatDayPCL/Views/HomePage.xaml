@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="{Binding PageTitle}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WhatDayPCL.HomePage">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Label Text="{Binding LabelText}" />
+			<Label Text="{Binding DayText}" />
+			<Button Text="{Binding SettingsButtonText}" Command="{Binding NavigateToSettings}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
