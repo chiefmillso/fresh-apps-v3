@@ -182,3 +182,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 /Fresh.Web/Fresh.Web/bower_components/
+Fresh.Web/Fresh.Web/public/
