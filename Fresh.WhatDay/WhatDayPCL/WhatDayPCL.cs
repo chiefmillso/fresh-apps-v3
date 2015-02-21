@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Fresh.Core.Logging;
 using Autofac;
 using System.Reflection;
+using Fresh.Core.Xamarin;
 
 namespace WhatDayPCL
 {
@@ -15,19 +16,13 @@ namespace WhatDayPCL
 		{
 			var builder = new ContainerBuilder ();
 			var assembly = typeof(App).GetTypeInfo ().Assembly;
-			builder.RegisterAssemblyTypes (assembly)
-				.AsClosedTypesOf (typeof(IViewFor<>))
-				.SingleInstance ();
-			builder.RegisterAssemblyTypes (assembly)
-				.Where (x => x.Name.EndsWith ("ViewModel"))
-				.AsSelf ();
-
-			builder.RegisterType<MessagingServiceAdapter> ()
-				.As<IMessagingService> ()
-				.SingleInstance ();
+			XamarinFormsModule.Configure (builder, assembly);
 
 			var logger = DependencyService.Get<ILogger> ();
+			var persister = DependencyService.Get<IPersister> ();
+			builder.RegisterInstance (persister).AsImplementedInterfaces ();
 			builder.RegisterInstance (logger).AsImplementedInterfaces ();
+			builder.RegisterType<SettingsImpl> ().As<ISettings> ().SingleInstance ();
 
 			_container = builder.Build ();
 			var page = new SmartNavigationPage(_container, typeof(HomeViewModel));

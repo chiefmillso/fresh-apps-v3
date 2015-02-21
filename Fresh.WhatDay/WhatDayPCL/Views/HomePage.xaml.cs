@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Fresh.Core.Logging;
+using Fresh.Core.Xamarin;
 
 namespace WhatDayPCL
 {
@@ -11,6 +12,16 @@ namespace WhatDayPCL
 		public HomePage ()
 		{
 			InitializeComponent ();
+		}
+
+		protected override void OnAppearing ()
+		{
+			this.OnPageAppearing ();
+		}
+
+		protected override void OnDisappearing ()
+		{
+			this.OnPageDisappearing ();
 		}
 	}
 }

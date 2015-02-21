@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="{Binding PageTitle}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WhatDayPCL.SettingsPage">
 	<ContentPage.Content>
-		<DatePicker Date="{Binding StartDate, Mode=TwoWay}" />
+		<TableView Intent="Settings" IsVisible="{Binding IsLoaded}" >
+			<TableView.Root>
+				<TableSection Title="Dates">
+					<ViewCell>
+						<StackLayout Orientation="Horizontal" Padding="5">
+							<Label Text="{Binding StartDateLabel}" VerticalOptions="Center" HorizontalOptions="Start"  />
+							<DatePicker Date="{Binding StartDate, Mode=TwoWay}" HorizontalOptions="StartAndExpand" />
+						</StackLayout>
+					</ViewCell>
+				</TableSection>
+			</TableView.Root>
+		</TableView>
 	</ContentPage.Content>
 </ContentPage>

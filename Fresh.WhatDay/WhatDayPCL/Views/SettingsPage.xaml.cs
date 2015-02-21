@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Fresh.Core.Xamarin;
 
 namespace WhatDayPCL
 {
@@ -10,6 +11,16 @@ namespace WhatDayPCL
 		public SettingsPage ()
 		{
 			InitializeComponent ();
+		}
+
+		protected override void OnAppearing ()
+		{
+			this.OnPageAppearing ();
+		}
+
+		protected override void OnDisappearing ()
+		{
+			this.OnPageDisappearing ();
 		}
 	}
 }
