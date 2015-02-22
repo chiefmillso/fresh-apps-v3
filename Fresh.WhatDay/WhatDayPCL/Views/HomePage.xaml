@@ -4,7 +4,9 @@
 		<StackLayout Orientation="Vertical">
 			<Label Text="{Binding LabelText}" />
 			<Label Text="{Binding DayText}" />
-			<Button Text="{Binding SettingsButtonText}" Command="{Binding NavigateToSettings}" />
 		</StackLayout>
 	</ContentPage.Content>
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Settings" Text="{Binding SettingsButtonText}" Command="{Binding NavigateToSettings}" Order="Primary" Priority="0" />
+	</ContentPage.ToolbarItems>
 </ContentPage>

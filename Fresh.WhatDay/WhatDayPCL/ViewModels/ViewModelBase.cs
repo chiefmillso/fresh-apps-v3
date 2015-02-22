@@ -13,17 +13,17 @@ namespace WhatDayPCL
 
 		#region IPageLifecycle implementation
 
-		public void OnAppearing ()
+		void IPageLifecycle.OnAppearing ()
 		{
 			PageAppeared (this, new EventArgs());
 		}
 
-		public void OnDisappearing ()
+		void IPageLifecycle.OnDisappearing ()
 		{
 			PageDisappeared (this, new EventArgs ());
 		}
 
-		public bool OnBackButtonPressed ()
+		bool IPageLifecycle.OnBackButtonPressed ()
 		{
 			return true;
 		}

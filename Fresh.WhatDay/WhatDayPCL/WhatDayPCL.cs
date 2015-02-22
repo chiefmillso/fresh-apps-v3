@@ -14,6 +14,9 @@ namespace WhatDayPCL
 
 		public App ()
 		{
+			if (Device.OS != TargetPlatform.WinPhone)
+				AppResources.Culture = DependencyService.Get<ILocalise> ().GetCurrentCultureInfo ();
+
 			var builder = new ContainerBuilder ();
 			var assembly = typeof(App).GetTypeInfo ().Assembly;
 			XamarinFormsModule.Configure (builder, assembly);
@@ -25,7 +28,7 @@ namespace WhatDayPCL
 			builder.RegisterType<SettingsImpl> ().As<ISettings> ().SingleInstance ();
 
 			_container = builder.Build ();
-			var page = new SmartNavigationPage(_container, typeof(HomeViewModel));
+			var page = new SmartNavigationPage (_container, typeof(HomeViewModel));
 			MainPage = page;
 		}
 

@@ -23,10 +23,10 @@ namespace WhatDayPCL
 				Calculate ();
 			};
 
-			PageTitle = "What Day Is It?";
+			PageTitle = AppResources.HomePageTitle;
 			LabelText = "";
 			DayText = "";
-			SettingsButtonText = "Settings";
+			SettingsButtonText = AppResources.SettingsButtonLabel;
 
 			NavigateToSettings = new Command (async (_) => {
 				_logger.Info ("Navigating to Settings");
@@ -39,7 +39,7 @@ namespace WhatDayPCL
 			_logger.Info ("Calculating date based on {0:d}", _settings.StartDate);
 
 			var duration = DateTime.Now.Subtract (_settings.StartDate);
-			LabelText = string.Format ("Day {0}", (int)Math.Floor (duration.TotalDays));
+			LabelText = string.Format (AppResources.DayCountFormat, (int)Math.Ceiling (duration.TotalDays));
 			DayText = DateTime.Now.ToString ("D");
 		}
 

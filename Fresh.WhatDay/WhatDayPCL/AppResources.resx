@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="HomePageTitle" xml:space="preserve">
+	    <value>What Day is It?</value>
+	    <comment>title for Home Page</comment>
+	</data>
+	<data name="DayCountFormat" xml:space="preserve">
+	    <value>Day {0}</value>
+	    <comment>format for displaying Day count</comment>
+	</data>
+	<data name="SettingsButtonLabel" xml:space="preserve">
+	    <value>Settings</value>
+	    <comment>label for Settings button</comment>
+	</data>
+	<data name="AboutButtonLabel" xml:space="preserve">
+	    <value>About</value>
+	    <comment>label for About button</comment>
+	</data>
+	<data name="SettingsPageTitle" xml:space="preserve">
+	    <value>Settings</value>
+	    <comment>title for Settings Page</comment>
+	</data>
+	<data name="DatesSectionTitle" xml:space="preserve">
+	    <value>Dates</value>
+	    <comment>label for Dates Table Section</comment>
+	</data>
+	<data name="StartDateInputLabel" xml:space="preserve">
+	    <value>Start Date:</value>
+	    <comment>label for Start Date Input</comment>
+	</data>
+</root>

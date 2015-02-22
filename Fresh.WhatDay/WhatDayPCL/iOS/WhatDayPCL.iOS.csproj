@@ -135,6 +135,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="PlatformLogger.cs" />
     <Compile Include="Persister.cs" />
+    <Compile Include="Localise.cs" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork" />

@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="iOS/WhatDayPCL.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WhatDayPCL.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewModels/HomeViewModel.cs">
     <Files>
-      <File FileName="Infrastructure/Extensions.cs" Line="1" Column="1" />
-      <File FileName="WhatDayPCL.cs" Line="7" Column="7" />
+      <File FileName="ViewModels/HomeViewModel.cs" Line="4" Column="4" />
+      <File FileName="WhatDayPCL.cs" Line="49" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

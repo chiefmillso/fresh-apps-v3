@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace WhatDayPCL
 {
@@ -8,6 +9,10 @@ namespace WhatDayPCL
 		Task Save (string json);
 
 		Task<string> Load ();
+	}
+
+	public interface ILocalise {
+		CultureInfo GetCurrentCultureInfo();
 	}
 
 	public interface ISettings

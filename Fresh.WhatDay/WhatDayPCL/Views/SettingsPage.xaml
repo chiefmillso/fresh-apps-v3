@@ -3,7 +3,7 @@
 	<ContentPage.Content>
 		<TableView Intent="Settings" IsVisible="{Binding IsLoaded}" >
 			<TableView.Root>
-				<TableSection Title="Dates">
+				<TableSection Title="{Binding DatesSectionTitle}">
 					<ViewCell>
 						<StackLayout Orientation="Horizontal" Padding="5">
 							<Label Text="{Binding StartDateLabel}" VerticalOptions="Center" HorizontalOptions="Start"  />
@@ -14,4 +14,7 @@
 			</TableView.Root>
 		</TableView>
 	</ContentPage.Content>
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="About" Text="{Binding AboutButtonText}" Command="{Binding NavigateToAbout}" Order="Primary" Priority="0" />
+	</ContentPage.ToolbarItems>
 </ContentPage>
