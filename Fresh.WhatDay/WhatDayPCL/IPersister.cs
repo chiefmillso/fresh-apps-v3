@@ -11,10 +11,6 @@ namespace WhatDayPCL
 		Task<string> Load ();
 	}
 
-	public interface ILocalise {
-		CultureInfo GetCurrentCultureInfo();
-	}
-
 	public interface ISettings
 	{
 		DateTime StartDate { get; set; }

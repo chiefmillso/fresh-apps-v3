@@ -1,9 +1,12 @@
 ﻿using Foundation;
+using Fresh.Core.Xamarin.Contracts;
+
+
 [assembly:Xamarin.Forms.Dependency(typeof(WhatDayPCL.iOS.Localise))]
 
 namespace WhatDayPCL.iOS
 {
-	public class Localise : ILocalise
+	public class Localise : ILocalizable
 	{
 		public System.Globalization.CultureInfo GetCurrentCultureInfo ()
 		{

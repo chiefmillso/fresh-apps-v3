@@ -5,6 +5,7 @@
 			<Label Text="What Day?" />
 			<Label Text="Version: 1.0.0" />
 			<Label Text="Released: 12/01/2015" />
+			<Label Text="{Binding Culture}" />
 			<WebView></WebView>
 		</StackLayout>
 	</ContentPage.Content>

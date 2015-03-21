@@ -5,6 +5,8 @@ using Fresh.Core.Logging;
 using Autofac;
 using System.Reflection;
 using Fresh.Core.Xamarin;
+using Fresh.Core.Configuration;
+using Fresh.Core.Xamarin.Contracts;
 
 namespace WhatDayPCL
 {
@@ -14,8 +16,11 @@ namespace WhatDayPCL
 
 		public App ()
 		{
+			var localizable = DependencyService.Get<ILocalizable> ();
 			if (Device.OS != TargetPlatform.WinPhone)
-				AppResources.Culture = DependencyService.Get<ILocalise> ().GetCurrentCultureInfo ();
+				AppResources.Culture = localizable.GetCurrentCultureInfo ();
+
+			Settings.Instance.Initialize (this);
 
 			var builder = new ContainerBuilder ();
 			var assembly = typeof(App).GetTypeInfo ().Assembly;
@@ -25,6 +30,7 @@ namespace WhatDayPCL
 			var persister = DependencyService.Get<IPersister> ();
 			builder.RegisterInstance (persister).AsImplementedInterfaces ();
 			builder.RegisterInstance (logger).AsImplementedInterfaces ();
+			builder.RegisterInstance (localizable).AsImplementedInterfaces ();
 			builder.RegisterType<SettingsImpl> ().As<ISettings> ().SingleInstance ();
 
 			_container = builder.Build ();
