@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Title="{Binding PageTitle}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WhatDayPCL.AboutPage">
+<ContentPage Title="{Binding PageTitle}" 
+xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:localize="clr-namespace:Fresh.Core.Xamarin.Localization;assembly=Fresh.Core.Xamarin.Portable"
+x:Class="WhatDayPCL.AboutPage">
 	<ContentPage.Content>
 		<StackLayout>
 			<Label Text="What Day?" />

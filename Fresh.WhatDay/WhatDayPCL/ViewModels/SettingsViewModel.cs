@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using Fresh.Core.Logging;
+using WhatDayPCL.Localization;
 
 namespace WhatDayPCL
 {
-	public class SettingsViewModel : ViewModelBase
+	public class SettingsViewModel :  ViewModelBase
 	{
 		private readonly ILogger _logger;
 
@@ -23,26 +24,16 @@ namespace WhatDayPCL
 				settings.StartDate = StartDate;
 			};
 
-			AboutButtonText = AppResources.AboutButtonLabel;
-
 			NavigateToAbout = new Command (async (_) => {
 				_logger.Info ("Navigating to About Page");
 				await navigation.NavigateToAsync<AboutViewModel> ();
 			});
 
 			PageTitle = AppResources.SettingsPageTitle;
-			StartDateLabel = AppResources.StartDateInputLabel;
-			DatesSectionTitle = AppResources.DatesSectionTitle;
 			StartDate = settings.StartDate;
 		}
 
 		public Command NavigateToAbout { get; set; }
-
-		public string AboutButtonText { get; set; }
-
-		public string StartDateLabel { get; set; }
-
-		public string DatesSectionTitle { get; set; }
 
 		bool isLoaded;
 
@@ -54,8 +45,6 @@ namespace WhatDayPCL
 				SetField (ref isLoaded, value);
 			}
 		}
-
-		public string PageTitle { get; set; }
 
 		DateTime startDate;
 

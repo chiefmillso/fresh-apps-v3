@@ -18,7 +18,7 @@ namespace WhatDayPCL
 		{
 			var localizable = DependencyService.Get<ILocalizable> ();
 			if (Device.OS != TargetPlatform.WinPhone)
-				AppResources.Culture = localizable.GetCurrentCultureInfo ();
+				Localization.AppResources.Culture = localizable.GetCurrentCultureInfo ();
 
 			Settings.Instance.Initialize (this);
 

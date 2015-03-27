@@ -2,6 +2,7 @@ using System;
 using Xamarin.Forms;
 using Fresh.Core.Logging;
 using Fresh.Core.Xamarin;
+using WhatDayPCL.Localization;
 
 namespace WhatDayPCL
 {
@@ -15,18 +16,13 @@ namespace WhatDayPCL
 			_logger = logger.For (this);
 			_settings = settings;
 
-			_settings.Loaded += (sender, e) => {
-				Calculate ();
-			};
+			_settings.Loaded += (sender, e) => Calculate ();
 
-			PageAppeared += (sender, e) => {
-				Calculate ();
-			};
+			PageAppeared += (sender, e) => Calculate ();
 
 			PageTitle = AppResources.HomePageTitle;
 			LabelText = "";
 			DayText = "";
-			SettingsButtonText = AppResources.SettingsButtonLabel;
 
 			NavigateToSettings = new Command (async (_) => {
 				_logger.Info ("Navigating to Settings");
@@ -44,10 +40,6 @@ namespace WhatDayPCL
 		}
 
 		public Command NavigateToSettings { get; set; }
-
-		public string SettingsButtonText { get; set; }
-
-		public string PageTitle { get; set; }
 
 		string labelText;
 

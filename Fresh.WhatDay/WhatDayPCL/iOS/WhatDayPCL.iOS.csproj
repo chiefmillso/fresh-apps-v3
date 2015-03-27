@@ -105,7 +105,7 @@
       <HintPath>..\packages\Fresh.Core.Portable.1.1.19\lib\Fresh.Core.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>..\packages\Fresh.Core.Xamarin.Portable.1.1.19\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+      <HintPath>..\packages\Fresh.Core.Xamarin.Portable.1.1.21\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

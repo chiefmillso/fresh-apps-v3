@@ -1,5 +1,6 @@
 ﻿using System;
 using Fresh.Core.Configuration;
+using Fresh.Core.Xamarin;
 using Fresh.Core.Xamarin.Contracts;
 
 namespace WhatDayPCL
@@ -17,8 +18,6 @@ namespace WhatDayPCL
 		public string VersionText { get; set; }
 
 		public string Copyright { get; set; }
-
-		public string PageTitle { get; set; }
 
 		public string Culture { get; set; }
 	}

@@ -42,13 +42,12 @@
     </Compile>
     <Compile Include="Logging\DebugLogger.cs" />
     <Compile Include="IPersister.cs" />
-    <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Compile Include="AppResources.Designer.cs">
-      <DependentUpon>AppResources.resx</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
@@ -63,11 +62,11 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>packages\Xamarin.Forms.1.4.0.6341\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.19\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Fresh.Core.Portable">
-      <HintPath>packages\Fresh.Core.Portable.1.1.19\lib\Fresh.Core.Portable.dll</HintPath>
+      <HintPath>packages\Fresh.Core.Portable.1.1.21\lib\Fresh.Core.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Portable">
+      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.21\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +76,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
     <Folder Include="Logging\" />
+    <Folder Include="Localization\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\HomePage.xaml">
@@ -85,12 +85,13 @@
     <EmbeddedResource Include="Views\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\AboutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>WhatDayPCL.Localization</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
