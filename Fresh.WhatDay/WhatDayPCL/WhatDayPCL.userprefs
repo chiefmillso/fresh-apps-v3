@@ -1,12 +1,6 @@
 ﻿<Properties StartupItem="iOS/WhatDayPCL.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ViewModels/AboutViewModel.cs">
-    <Files>
-      <File FileName="ViewModels/SettingsViewModel.cs" Line="26" Column="1" />
-      <File FileName="ViewModels/AboutViewModel.cs" Line="15" Column="4" />
-      <File FileName="WhatDayPCL.cs" Line="21" Column="57" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
