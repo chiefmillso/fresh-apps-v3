@@ -7,39 +7,41 @@ using System.Reflection;
 using Fresh.Core.Xamarin;
 using Fresh.Core.Configuration;
 using Fresh.Core.Xamarin.Contracts;
-using Exceptionless;
 
 namespace WhatDayPCL
 {
 	public class App : Application
 	{
-		IContainer _container;
+	    private readonly IContainer _container;
 
 		public App ()
 		{
-			var localizable = DependencyService.Get<ILocalizable> ();
-			if (Device.OS != TargetPlatform.WinPhone)
-				Localization.AppResources.Culture = localizable.GetCurrentCultureInfo ();
+		    var logger = DependencyService.Get<ILogger>();
+		    try
+		    {
+		        var localizable = DependencyService.Get<ILocalizable>();
+		        if (Device.OS != TargetPlatform.WinPhone)
+		            Localization.AppResources.Culture = localizable.GetCurrentCultureInfo();
 
-			Settings.Instance.Initialize (this);
+		        Settings.Instance.Initialize(this);
 
-			var builder = new ContainerBuilder ();
-			var assembly = typeof(App).GetTypeInfo ().Assembly;
-			XamarinFormsModule.Configure (builder, assembly);
+		        var builder = new ContainerBuilder();
+		        var assembly = typeof (App).GetTypeInfo().Assembly;
+		        XamarinFormsModule.Configure(builder, assembly);
 
-			ExceptionlessClient.Default.Configuration.ApiKey = "3de07e2fe67f4ddcb5734d30f7fd875f";
-			ExceptionlessClient.Default.Configuration.DefaultData ["AppName"] = assembly.GetName ().Name;
+		        builder.RegisterInstance(logger).AsImplementedInterfaces();
+		        builder.RegisterType<SettingsImpl>().As<ISettings>().SingleInstance();
 
-			var logger = DependencyService.Get<ILogger> ();
-			var persister = DependencyService.Get<IPersister> ();
-			builder.RegisterInstance (persister).AsImplementedInterfaces ();
-			builder.RegisterInstance (logger).AsImplementedInterfaces ();
-			builder.RegisterInstance (localizable).AsImplementedInterfaces ();
-			builder.RegisterType<SettingsImpl> ().As<ISettings> ().SingleInstance ();
+		        _container = builder.Build();
+		        var page = new SmartNavigationPage(_container, typeof (HomeViewModel));
+		        MainPage = page;
 
-			_container = builder.Build ();
-			var page = new SmartNavigationPage (_container, typeof(HomeViewModel));
-			MainPage = page;
+		    }
+		    catch (Exception ex)
+		    {
+                logger.Exception(ex.Message, ex);
+		        throw;
+		    }
 		}
 
 		protected override void OnStart ()

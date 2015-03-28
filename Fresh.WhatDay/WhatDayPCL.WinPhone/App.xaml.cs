@@ -1,4 +1,7 @@
-﻿using System;
+﻿using System.Reflection;
+using Windows.UI.Popups;
+using Exceptionless;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,6 +20,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
+using Fresh.Core.WinPhone;
 
 namespace WhatDayPCL.WinPhone
 {
@@ -35,6 +39,8 @@ namespace WhatDayPCL.WinPhone
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            ExceptionlessHelper.Configure(this, typeof(App).GetTypeInfo().Assembly);
         }
 
         /// <summary>
@@ -65,6 +71,7 @@ namespace WhatDayPCL.WinPhone
                 rootFrame.CacheSize = 1;
 
                 Xamarin.Forms.Forms.Init(e);
+
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

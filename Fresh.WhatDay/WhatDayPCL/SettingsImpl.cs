@@ -1,30 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Globalization;
+using Fresh.Core.Xamarin;
 
 namespace WhatDayPCL
 {
-	public interface IPersister
+    public class SettingsImpl : ISettings
 	{
-		Task Save (string json);
-
-		Task<string> Load ();
-	}
-
-	public interface ISettings
-	{
-		DateTime StartDate { get; set; }
-
-		event EventHandler Loaded;
-	}
-
-	public class SettingsImpl : ISettings
-	{
-		private IPersister _persister;
+		private IFilePersister _persister;
 
 		public event EventHandler Loaded = (s,e) => {};
 
-		public SettingsImpl (IPersister persister)
+        public SettingsImpl(IFilePersister persister)
 		{
 			_persister = persister;
 
@@ -38,9 +25,15 @@ namespace WhatDayPCL
 		private async Task Load ()
 		{
 			long ticks = 0;
-			var result = await _persister.Load ();
-			if (long.TryParse (result, out ticks))
-				startDate = new DateTime (ticks);
+		    try
+		    {
+		        var result = await _persister.LoadAsync("WhatDayPCL");
+		        if (long.TryParse(result, out ticks))
+		            startDate = new DateTime(ticks);
+		    }
+		    catch
+		    {
+		    }
 		}
 
 		DateTime startDate;
@@ -51,7 +44,7 @@ namespace WhatDayPCL
 			}
 			set {
 				if (value != startDate) {
-					_persister.Save (value.Ticks.ToString ());
+					_persister.SaveAsync("WhatDayPCL", value.Ticks.ToString ());
 				}
 				startDate = value;
 			}
