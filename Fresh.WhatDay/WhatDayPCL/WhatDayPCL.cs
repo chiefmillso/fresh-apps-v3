@@ -7,6 +7,7 @@ using System.Reflection;
 using Fresh.Core.Xamarin;
 using Fresh.Core.Configuration;
 using Fresh.Core.Xamarin.Contracts;
+using Exceptionless;
 
 namespace WhatDayPCL
 {
@@ -25,6 +26,9 @@ namespace WhatDayPCL
 			var builder = new ContainerBuilder ();
 			var assembly = typeof(App).GetTypeInfo ().Assembly;
 			XamarinFormsModule.Configure (builder, assembly);
+
+			ExceptionlessClient.Default.Configuration.ApiKey = "3de07e2fe67f4ddcb5734d30f7fd875f";
+			ExceptionlessClient.Default.Configuration.DefaultData ["AppName"] = assembly.GetName ().Name;
 
 			var logger = DependencyService.Get<ILogger> ();
 			var persister = DependencyService.Get<IPersister> ();

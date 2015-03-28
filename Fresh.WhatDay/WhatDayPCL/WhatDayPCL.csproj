@@ -68,6 +68,9 @@
     <Reference Include="Fresh.Core.Xamarin.Portable">
       <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.21\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
+    <Reference Include="Exceptionless.Portable">
+      <HintPath>packages\Exceptionless.Portable.Signed.2.0.1288\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
