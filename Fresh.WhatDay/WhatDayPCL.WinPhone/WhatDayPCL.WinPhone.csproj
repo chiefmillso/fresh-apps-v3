@@ -122,20 +122,24 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WhatDayPCL\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Exceptionless">
       <HintPath>..\WhatDayPCL\packages\Exceptionless.Signed.2.0.1247\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.dll</HintPath>
     </Reference>
-    <Reference Include="Fresh.Core.Portable, Version=1.1.26.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.26\lib\Fresh.Core.Portable.dll</HintPath>
+    <Reference Include="Fresh.Core.Portable">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.34\lib\Fresh.Core.Portable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Fresh.Core.WinPhone, Version=1.1.26.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Fresh.Core.WinPhone, Version=1.1.34.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.WinPhone.1.1.26\lib\Fresh.Core.WinPhone.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.WinPhone.1.1.34\lib\Fresh.Core.WinPhone.dll</HintPath>
     </Reference>
-    <Reference Include="Fresh.Core.Xamarin.Portable, Version=1.1.26.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Fresh.Core.Xamarin.Portable, Version=1.1.34.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.26\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.34\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.Windows.1.4.1.6347-pre2\lib\wpa81\Xamarin.Forms.Core.dll</HintPath>

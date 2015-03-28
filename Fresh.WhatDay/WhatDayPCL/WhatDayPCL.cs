@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 using Xamarin.Forms;
 using Fresh.Core.Logging;
 using Autofac;
@@ -18,7 +18,7 @@ namespace WhatDayPCL
 
 		private static void ContainerInit(IContainer container)
 		{
-			Localization.AppResources.Culture = container.Resolve<ILocalizable> ().GetCurrentCultureInfo ();
+            Localization.AppResources.Culture = container.Resolve<ILocalizable> ().GetCurrentCultureInfo ();
 		}
 
 		protected override void OnStart ()
