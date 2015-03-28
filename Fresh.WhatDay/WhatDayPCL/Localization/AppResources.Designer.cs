@@ -47,45 +47,75 @@ namespace WhatDayPCL.Localization {
             }
         }
         
+        internal static string About_ReleaseDate {
+            get {
+                return ResourceManager.GetString("About_ReleaseDate", resourceCulture);
+            }
+        }
+        
+        internal static string About_Version {
+            get {
+                return ResourceManager.GetString("About_Version", resourceCulture);
+            }
+        }
+        
+        internal static string About_PageTitle {
+            get {
+                return ResourceManager.GetString("About_PageTitle", resourceCulture);
+            }
+        }
+        
+        internal static string Settings_DatesSectionTitle {
+            get {
+                return ResourceManager.GetString("Settings_DatesSectionTitle", resourceCulture);
+            }
+        }
+        
+        internal static string Common_AboutButtonLabel {
+            get {
+                return ResourceManager.GetString("Common_AboutButtonLabel", resourceCulture);
+            }
+        }
+        
+        internal static string Common_SettingsButtonLabel {
+            get {
+                return ResourceManager.GetString("Common_SettingsButtonLabel", resourceCulture);
+            }
+        }
+        
+        internal static string About_Details {
+            get {
+                return ResourceManager.GetString("About_Details", resourceCulture);
+            }
+        }
+        
         internal static string DayCountFormat {
             get {
                 return ResourceManager.GetString("DayCountFormat", resourceCulture);
             }
         }
         
-        internal static string HomePageTitle {
+        internal static string Home_PageTitle {
             get {
-                return ResourceManager.GetString("HomePageTitle", resourceCulture);
+                return ResourceManager.GetString("Home_PageTitle", resourceCulture);
             }
         }
         
-        internal static string DatesSectionTitle {
+        internal static string About_Language {
             get {
-                return ResourceManager.GetString("DatesSectionTitle", resourceCulture);
+                return ResourceManager.GetString("About_Language", resourceCulture);
             }
         }
         
-        internal static string AboutButtonLabel {
+        internal static string Settings_PageTitle {
             get {
-                return ResourceManager.GetString("AboutButtonLabel", resourceCulture);
+                return ResourceManager.GetString("Settings_PageTitle", resourceCulture);
             }
         }
         
-        internal static string SettingsButtonLabel {
+        internal static string Settings_StartDateInputLabel {
             get {
-                return ResourceManager.GetString("SettingsButtonLabel", resourceCulture);
-            }
-        }
-        
-        internal static string SettingsPageTitle {
-            get {
-                return ResourceManager.GetString("SettingsPageTitle", resourceCulture);
-            }
-        }
-        
-        internal static string StartDateInputLabel {
-            get {
-                return ResourceManager.GetString("StartDateInputLabel", resourceCulture);
+                return ResourceManager.GetString("Settings_StartDateInputLabel", resourceCulture);
             }
         }
     }

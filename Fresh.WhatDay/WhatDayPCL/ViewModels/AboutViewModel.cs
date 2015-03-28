@@ -7,7 +7,7 @@ namespace WhatDayPCL
     {
         public AboutViewModel(ILocalizable localizable)
         {
-            PageTitle = "What Day - 1.0.0";
+			PageTitle = Localization.AppResources.About_PageTitle;
             Copyright = "Copyright 2015 - Freshly Squeezed Code";
             VersionText = "1.0.0";
             Culture = localizable.GetCurrentCultureInfo().DisplayName;

@@ -20,7 +20,7 @@ namespace WhatDayPCL
 
 			PageAppeared += (sender, e) => Calculate ();
 
-			PageTitle = AppResources.HomePageTitle;
+			PageTitle = AppResources.Home_PageTitle;
 			LabelText = "";
 			DayText = "";
 

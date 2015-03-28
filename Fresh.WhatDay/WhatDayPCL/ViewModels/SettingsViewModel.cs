@@ -29,7 +29,7 @@ namespace WhatDayPCL
 				await navigation.NavigateToAsync<AboutViewModel> ();
 			});
 
-			PageTitle = AppResources.SettingsPageTitle;
+			PageTitle = AppResources.Settings_PageTitle;
 			StartDate = settings.StartDate;
 		}
 

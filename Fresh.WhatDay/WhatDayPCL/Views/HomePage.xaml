@@ -10,6 +10,6 @@ x:Class="WhatDayPCL.HomePage">
 		</StackLayout>
 	</ContentPage.Content>
 	<ContentPage.ToolbarItems>
-		<ToolbarItem Name="Settings" Text="{localize:Translate SettingsButtonLabel}" Command="{Binding NavigateToSettings}" Order="Primary" Priority="0" />
+		<ToolbarItem Name="Settings" Text="{localize:Translate Common_SettingsButtonLabel}" Command="{Binding NavigateToSettings}" Order="Primary" Priority="0" />
 	</ContentPage.ToolbarItems>
 </ContentPage>

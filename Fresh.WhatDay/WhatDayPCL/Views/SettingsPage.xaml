@@ -7,10 +7,10 @@ x:Class="WhatDayPCL.SettingsPage">
 	<ContentPage.Content>
 		<TableView Intent="Settings" IsVisible="{Binding IsLoaded}" >
 			<TableView.Root>
-				<TableSection Title="{localize:Translate DatesSectionTitle}">
+				<TableSection Title="{localize:Translate Settings_DatesSectionTitle}">
 					<ViewCell>
 						<StackLayout Orientation="Horizontal" Padding="5">
-							<Label Text="{localize:Translate StartDateInputLabel}" VerticalOptions="Center" HorizontalOptions="Start"  />
+							<Label Text="{localize:Translate Settings_StartDateInputLabel}" VerticalOptions="Center" HorizontalOptions="Start"  />
 							<DatePicker Date="{Binding StartDate, Mode=TwoWay}" HorizontalOptions="StartAndExpand" />
 						</StackLayout>
 					</ViewCell>
@@ -19,6 +19,6 @@ x:Class="WhatDayPCL.SettingsPage">
 		</TableView>
 	</ContentPage.Content>
 	<ContentPage.ToolbarItems>
-		<ToolbarItem Name="About" Text="{localize:Translate AboutButtonLabel}" Command="{Binding NavigateToAbout}" Order="Primary" Priority="0" />
+		<ToolbarItem Name="About" Text="{localize:Translate Common_AboutButtonLabel}" Command="{Binding NavigateToAbout}" Order="Primary" Priority="0" />
 	</ContentPage.ToolbarItems>
 </ContentPage>

@@ -12,7 +12,7 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-	<data name="HomePageTitle" xml:space="preserve">
+	<data name="Home_PageTitle" xml:space="preserve">
 	    <value>What Day is It?</value>
 	    <comment>title for Home Page</comment>
 	</data>
@@ -20,24 +20,44 @@
 	    <value>Day {0}</value>
 	    <comment>format for displaying Day count</comment>
 	</data>
-	<data name="SettingsButtonLabel" xml:space="preserve">
+	<data name="Common_SettingsButtonLabel" xml:space="preserve">
 	    <value>Settings</value>
 	    <comment>label for Settings button</comment>
 	</data>
-	<data name="AboutButtonLabel" xml:space="preserve">
+	<data name="Common_AboutButtonLabel" xml:space="preserve">
 	    <value>About</value>
 	    <comment>label for About button</comment>
 	</data>
-	<data name="SettingsPageTitle" xml:space="preserve">
+	<data name="Settings_PageTitle" xml:space="preserve">
 	    <value>Settings</value>
 	    <comment>title for Settings Page</comment>
 	</data>
-	<data name="DatesSectionTitle" xml:space="preserve">
+	<data name="Settings_DatesSectionTitle" xml:space="preserve">
 	    <value>Dates</value>
 	    <comment>label for Dates Table Section</comment>
 	</data>
-	<data name="StartDateInputLabel" xml:space="preserve">
+	<data name="Settings_StartDateInputLabel" xml:space="preserve">
 	    <value>Start Date:</value>
 	    <comment>label for Start Date Input</comment>
+	</data>
+	<data name="About_PageTitle" xml:space="preserve">
+	    <value>About</value>
+	    <comment>title for About Page</comment>
+	</data>
+	<data name="About_Details" xml:space="preserve">
+	    <value>Details</value>
+	    <comment>title of the details section on the about page</comment>
+	</data>
+	<data name="About_Version" xml:space="preserve">
+	    <value>Version</value>
+	    <comment>title of the version text cell on the about page</comment>
+	</data>
+	<data name="About_ReleaseDate" xml:space="preserve">
+	    <value>Released</value>
+	    <comment>title of the release date text cell on the about page</comment>
+	</data>
+	<data name="About_Language" xml:space="preserve">
+	    <value>Language</value>
+	    <comment>title of the language text cell on the about page</comment>
 	</data>
 </root>
