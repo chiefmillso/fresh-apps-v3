@@ -1,6 +1,12 @@
-﻿<Properties StartupItem="../WhatDayPCL.iOS/WhatDayPCL.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupItem="../WhatDayPCL.Droid/WhatDayPCL.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../WhatDayPCL.Droid/Persister.cs">
+    <Files>
+      <File FileName="../WhatDayPCL.iOS/Dependencies.cs" Line="42" Column="1" />
+      <File FileName="../WhatDayPCL.Droid/Dependencies.cs" Line="26" Column="27" />
+      <File FileName="../WhatDayPCL.Droid/Persister.cs" Line="23" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

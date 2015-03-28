@@ -89,12 +89,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.23\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
-    </Reference>
-    <Reference Include="Fresh.Core.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.23\lib\Fresh.Core.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Autofac">
       <HintPath>..\WhatDayPCL\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
@@ -109,6 +103,12 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Portable">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.26\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Portable">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.26\lib\Fresh.Core.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -139,9 +139,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="PlatformLogger.cs" />
     <Compile Include="Persister.cs" />
     <Compile Include="Localise.cs" />
+    <Compile Include="Dependencies.cs" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork" />

@@ -12,7 +12,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>WhatDayPCL.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
@@ -42,12 +42,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.23\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
-    </Reference>
-    <Reference Include="Fresh.Core.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.23\lib\Fresh.Core.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\WhatDayPCL\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
@@ -69,11 +63,19 @@
     <Reference Include="Autofac">
       <HintPath>..\WhatDayPCL\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Portable">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.26\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Portable">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.26\lib\Fresh.Core.Portable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dependencies.cs" />
+    <Compile Include="Persister.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

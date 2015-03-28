@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Globalization;
 using Fresh.Core.Xamarin;
 
 namespace WhatDayPCL

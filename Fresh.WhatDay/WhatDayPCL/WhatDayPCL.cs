@@ -29,7 +29,7 @@ namespace WhatDayPCL
 		        var assembly = typeof (App).GetTypeInfo().Assembly;
 		        XamarinFormsModule.Configure(builder, assembly);
 
-		        builder.RegisterInstance(logger).AsImplementedInterfaces();
+				builder.RegisterInstance(logger).AsImplementedInterfaces();
 		        builder.RegisterType<SettingsImpl>().As<ISettings>().SingleInstance();
 
 		        _container = builder.Build();
@@ -39,7 +39,7 @@ namespace WhatDayPCL
 		    }
 		    catch (Exception ex)
 		    {
-                logger.Exception(ex.Message, ex);
+	            logger.Exception(ex.Message, ex);
 		        throw;
 		    }
 		}
