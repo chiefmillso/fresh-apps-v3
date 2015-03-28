@@ -6,7 +6,7 @@ namespace WhatDayPCL
 {
     public class SettingsImpl : ISettings
 	{
-		private IFilePersister _persister;
+		private readonly IFilePersister _persister;
 
 		public event EventHandler Loaded = (s,e) => {};
 

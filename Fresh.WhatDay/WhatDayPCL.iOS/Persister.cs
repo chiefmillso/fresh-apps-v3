@@ -4,8 +4,6 @@ using System.IO;
 using System.Threading.Tasks;
 using Fresh.Core.Xamarin;
 
-[assembly: Xamarin.Forms.Dependency (typeof(WhatDayPCL.iOS.Persister))]
-
 namespace WhatDayPCL.iOS
 {
 	public class Persister : IFilePersister

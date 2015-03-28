@@ -10,38 +10,15 @@ using Fresh.Core.Xamarin.Contracts;
 
 namespace WhatDayPCL
 {
-	public class App : Application
+	public class App : ApplicationBase<App,HomeViewModel>
 	{
-	    private readonly IContainer _container;
-
-		public App ()
+		public App () : base(ContainerInit)
 		{
-		    var logger = DependencyService.Get<ILogger>();
-		    try
-		    {
-		        var localizable = DependencyService.Get<ILocalizable>();
-		        if (Device.OS != TargetPlatform.WinPhone)
-		            Localization.AppResources.Culture = localizable.GetCurrentCultureInfo();
+		}
 
-		        Settings.Instance.Initialize(this);
-
-		        var builder = new ContainerBuilder();
-		        var assembly = typeof (App).GetTypeInfo().Assembly;
-		        XamarinFormsModule.Configure(builder, assembly);
-
-				builder.RegisterInstance(logger).AsImplementedInterfaces();
-		        builder.RegisterType<SettingsImpl>().As<ISettings>().SingleInstance();
-
-		        _container = builder.Build();
-		        var page = new SmartNavigationPage(_container, typeof (HomeViewModel));
-		        MainPage = page;
-
-		    }
-		    catch (Exception ex)
-		    {
-	            logger.Exception(ex.Message, ex);
-		        throw;
-		    }
+		private static void ContainerInit(IContainer container)
+		{
+			Localization.AppResources.Culture = container.Resolve<ILocalizable> ().GetCurrentCultureInfo ();
 		}
 
 		protected override void OnStart ()

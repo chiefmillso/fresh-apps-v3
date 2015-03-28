@@ -50,6 +50,7 @@
     <Compile Include="Localization\AppResources.Designer.cs">
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="WhatDayModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -60,17 +61,17 @@
     <Reference Include="Exceptionless.Portable">
       <HintPath>packages\Exceptionless.Portable.Signed.2.0.1288\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
     </Reference>
-    <Reference Include="Fresh.Core.Portable">
-      <HintPath>packages\Fresh.Core.Portable.1.1.26\lib\Fresh.Core.Portable.dll</HintPath>
-    </Reference>
-    <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.26\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>packages\Xamarin.Forms.1.4.1.6347-pre2\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>packages\Xamarin.Forms.1.4.1.6347-pre2\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Portable">
+      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.34\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Portable">
+      <HintPath>packages\Fresh.Core.Portable.1.1.34\lib\Fresh.Core.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

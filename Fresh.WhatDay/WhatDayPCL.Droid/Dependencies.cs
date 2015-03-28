@@ -6,9 +6,7 @@ using Autofac;
 using Fresh.Core.Xamarin.Contracts;
 using Xamarin.Forms;
 
-[assembly: Xamarin.Forms.Dependency (typeof(WhatDayPCL.Droid.PlatformLogger))]
 [assembly: Xamarin.Forms.Dependency (typeof(WhatDayPCL.Droid.ModulesProvider))]
-[assembly: Xamarin.Forms.Dependency (typeof(WhatDayPCL.Droid.Localise))]
 
 namespace WhatDayPCL.Droid
 {
@@ -24,6 +22,7 @@ namespace WhatDayPCL.Droid
 		public IContainerModule[] Provide ()
 		{
 			var list = new List<IContainerModule> ();
+			list.Add (new WhatDayModule());
 			list.Add (new DroidModule ());
 			return list.ToArray ();
 		}
@@ -33,8 +32,8 @@ namespace WhatDayPCL.Droid
 		
 		public void Configure (Autofac.ContainerBuilder builder)
 		{
-			var localizable = DependencyService.Get<ILocalizable>();
-			builder.RegisterInstance (localizable).As<ILocalizable> ();
+			builder.RegisterInstance (new Localise()).As<ILocalizable> ();
+			builder.RegisterInstance (new PlatformLogger ()).As<ILogger> ();
 			builder.RegisterType<Persister> ().As<IFilePersister> ();
 		}
 	}

@@ -64,10 +64,10 @@
       <HintPath>..\WhatDayPCL\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.26\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.34\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.26\lib\Fresh.Core.Portable.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.34\lib\Fresh.Core.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
