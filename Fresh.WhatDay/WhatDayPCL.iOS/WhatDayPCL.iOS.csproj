@@ -92,23 +92,29 @@
     <Reference Include="Autofac">
       <HintPath>..\WhatDayPCL\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Exceptionless.Portable">
-      <HintPath>..\WhatDayPCL\packages\Exceptionless.Portable.Signed.2.0.1288\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Platform.iOS">
-      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6349\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6349\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6349\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Views">
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.Views.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.35\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Portable">
-      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.35\lib\Fresh.Core.Portable.dll</HintPath>
+      <HintPath>..\WhatDayPCL\packages\Fresh.Core.Portable.1.1.39\lib\Fresh.Core.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless.Portable">
+      <HintPath>..\WhatDayPCL\packages\Exceptionless.Portable.Signed.3.0.1319\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -149,7 +155,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
-  <Import Project="..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\WhatDayPCL\packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
     <ProjectReference Include="..\WhatDayPCL\WhatDayPCL.csproj">
       <Project>{7856EE61-CC3D-4D70-A895-1E82E36E575F}</Project>

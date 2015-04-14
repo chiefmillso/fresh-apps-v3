@@ -47,6 +47,12 @@ namespace WhatDayPCL.Localization {
             }
         }
         
+        internal static string About_Copyright {
+            get {
+                return ResourceManager.GetString("About_Copyright", resourceCulture);
+            }
+        }
+        
         internal static string About_ReleaseDate {
             get {
                 return ResourceManager.GetString("About_ReleaseDate", resourceCulture);

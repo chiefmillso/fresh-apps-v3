@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using Fresh.Core.Logging;
 using WhatDayPCL.Localization;
+using FreshViews;
 
 namespace WhatDayPCL
 {

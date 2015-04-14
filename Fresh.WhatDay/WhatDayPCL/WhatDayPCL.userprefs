@@ -1,13 +1,6 @@
-﻿<Properties StartupItem="../WhatDayPCL.iOS/WhatDayPCL.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WhatDayPCL.cs">
-    <Files>
-      <File FileName="../WhatDayPCL.iOS/Dependencies.cs" Line="1" Column="1" />
-      <File FileName="WhatDayPCL.cs" Line="16" Column="4" />
-      <File FileName="../WhatDayPCL.Droid/Dependencies.cs" Line="1" Column="1" />
-      <File FileName="../WhatDayPCL.iOS/Localise.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="../WhatDayPCL.Droid/WhatDayPCL.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

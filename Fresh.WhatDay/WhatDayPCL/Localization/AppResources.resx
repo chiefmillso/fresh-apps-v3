@@ -60,4 +60,8 @@
 	    <value>Language</value>
 	    <comment>title of the language text cell on the about page</comment>
 	</data>
+	<data name="About_Copyright" xml:space="preserve">
+	    <value>Copyright 2015</value>
+	    <comment>title of the copyright text cell on the about page</comment>
+	</data>
 </root>

@@ -2,7 +2,7 @@
 <ContentPage Title="{Binding PageTitle}" 
 xmlns="http://xamarin.com/schemas/2014/forms" 
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-xmlns:localize="clr-namespace:Fresh.Core.Xamarin.Localization;assembly=Fresh.Core.Xamarin.Portable"
+xmlns:localize="clr-namespace:Fresh.Core.Xamarin.Localization;assembly=Fresh.Core.Xamarin"
 x:Class="WhatDayPCL.AboutPage">
 	<ContentPage.Content>
 		<TableView Intent="Data">

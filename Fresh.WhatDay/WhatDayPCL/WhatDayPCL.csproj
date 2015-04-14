@@ -43,35 +43,37 @@
     </Compile>
     <Compile Include="Logging\DebugLogger.cs" />
     <Compile Include="SettingsImpl.cs" />
-    <Compile Include="ViewModels\AboutViewModel.cs" />
-    <Compile Include="Views\AboutPage.xaml.cs">
-      <DependentUpon>AboutPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Localization\AppResources.Designer.cs">
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="WhatDayModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.1.4.1.6347-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.1.4.1.6349\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
     <Reference Include="Autofac">
       <HintPath>packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Exceptionless.Portable">
-      <HintPath>packages\Exceptionless.Portable.Signed.2.0.1288\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core">
-      <HintPath>packages\Xamarin.Forms.1.4.1.6347-pre2\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>packages\Xamarin.Forms.1.4.1.6349\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>packages\Xamarin.Forms.1.4.1.6347-pre2\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>packages\Xamarin.Forms.1.4.1.6349\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin">
+      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="Fresh.Core.Xamarin.Views">
+      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.Views.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Xamarin.Portable">
-      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.35\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
+      <HintPath>packages\Fresh.Core.Xamarin.Portable.1.1.39\lib\Fresh.Core.Xamarin.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Fresh.Core.Portable">
-      <HintPath>packages\Fresh.Core.Portable.1.1.35\lib\Fresh.Core.Portable.dll</HintPath>
+      <HintPath>packages\Fresh.Core.Portable.1.1.39\lib\Fresh.Core.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Exceptionless.Portable">
+      <HintPath>packages\Exceptionless.Portable.Signed.3.0.1319\lib\portable-net40+sl50+win+wpa81+wp80\Exceptionless.Portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -83,9 +85,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SettingsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\AboutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\AppResources.resx">
